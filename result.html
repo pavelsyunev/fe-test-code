@@ -27,7 +27,10 @@
           <img src="img/logo.svg" width="173" height="25" alt="" />
         </a>
         <div>
-          <img src="img/icn_search.svg" width="23" height="23" alt="Search" />
+          <a href="./index.html">
+            <img src="img/icn_search.svg" width="23" height="23" alt="Search" />
+          </a>
+
           <img
             class="ml-4"
             src="img/icn_person.svg"
@@ -38,6 +41,7 @@
         </div>
       </div>
     </nav>
+
     <section class="result">
       <div class="container">
         <div class="headline text-center">
@@ -65,7 +69,7 @@
               <div class="row mt-3">
                 <div class="col-md-6">
                   <h5>Email</h5>
-                  <p id="email" class="email"></p>
+                  <p id="res-email" class="res-email"></p>
                 </div>
                 <div class="col-md-6">
                   <h5>Relatives</h5>
@@ -86,6 +90,27 @@
             <strong>Try Again</strong> - Make a new search
           </h2>
         </div>
+
+        <div
+          id="type-of-search"
+          class="d-flex justify-content-between justify-content-md-start align-items-center mb-4"
+        >
+          <p class="d-none d-sm-block form-subtext m-0 text-uppercase">
+            Type of search:
+          </p>
+          <button
+            id="email"
+            class="btn btn-search-type-active ml-0 ml-sm-4 text-uppercase"
+          >
+            Email address
+          </button>
+          <button
+            id="phone"
+            class="btn btn-search-type ml-0 ml-sm-3 text-uppercase"
+          >
+            Phone nubmer
+          </button>
+        </div>
         <form>
           <div class="input-group">
             <input
@@ -94,7 +119,9 @@
               name="email"
               placeholder="Enter an Email Address"
             />
-            <p class="error-msg">Please enter a valid email address</p>
+            <p id="errorTxt" class="error-msg">
+              Please enter a valid email address
+            </p>
             <button
               id="btn-search"
               class="btn btn-form-submit text-uppercase"
@@ -112,7 +139,7 @@
         class="container d-flex flex-column justify-content-center align-items-center"
       >
         <img src="img/loading_spinner.gif" width="154" height="154" alt="" />
-        <h2 class="text-primary mt-4">Please wait a moment...</h2>
+        <h2 class="result-loading-title mt-4">Please wait a moment...</h2>
       </div>
     </section>
 

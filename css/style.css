@@ -101,6 +101,47 @@ section {
 --- Search Form ---
 ***************************************************************
 ************************************************************ */
+.btn-search-type {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #004a80;
+  color: #f6bc25;
+  padding: 2px 12px;
+  border: none;
+  border: 3px solid #f6bc25;
+  border-radius: 6px;
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+}
+
+.btn-search-type-active {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f6bc25;
+  color: #004a80;
+  padding: 2px 12px;
+  border: none;
+  border: 3px solid #f6bc25;
+  border-radius: 6px;
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+}
+
+.btn-search-type-active:before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: 31px;
+  left: 69px;
+  border-width: 7px;
+  border-color: #f6bc25 transparent transparent transparent;
+  border-style: solid;
+}
 
 .btn-form-submit {
   font-size: 24px;

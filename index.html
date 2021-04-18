@@ -48,6 +48,26 @@
           </h2>
         </div>
 
+        <div
+          id="type-of-search"
+          class="d-flex justify-content-between justify-content-md-start align-items-center mb-4"
+        >
+          <p class="d-none d-sm-block form-subtext m-0 text-uppercase">
+            Type of search:
+          </p>
+          <button
+            id="email"
+            class="btn btn-search-type-active ml-0 ml-sm-4 text-uppercase"
+          >
+            Email address
+          </button>
+          <button
+            id="phone"
+            class="btn btn-search-type ml-0 ml-sm-3 text-uppercase"
+          >
+            Phone nubmer
+          </button>
+        </div>
         <form>
           <div class="input-group">
             <input
@@ -56,7 +76,9 @@
               name="email"
               placeholder="Enter an Email Address"
             />
-            <p class="error-msg">Please enter a valid email address</p>
+            <p id="errorTxt" class="error-msg">
+              Please enter a valid email address
+            </p>
             <button
               id="btn-search"
               class="btn btn-form-submit text-uppercase"
